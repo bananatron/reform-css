@@ -14,7 +14,7 @@ gulp.task('default', function () {
 // Style compilation and minification
 gulp.task('styles', function() {
   return gulp.src([
-      'reform/*'
+      'reform/base.scss'
     ])
     .pipe(sourcemaps.init()) // Init sourcemaps
     .pipe(sass().on('error', sass.logError)) // Parse Sass

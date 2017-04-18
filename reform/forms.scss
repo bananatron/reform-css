@@ -1,0 +1,82 @@
+// Forms
+
+form {
+  &.is-vertical {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+input[type="text"],
+textarea {
+  display: inline-flex;
+  align-items: center;
+  border-radius: $radius;
+  box-shadow: none;
+  font-size: 1rem;
+  height: 2.25em;
+  justify-content: flex-start;
+  padding: 0 10px;
+  position: relative;
+  vertical-align: top;
+  background-color: white;
+  border: $form-border solid $form-border-color;
+  color: #363636;
+  max-width: 100%;
+  margin-bottom: $vertical-spacing;
+
+  &:focus {
+    border-color: $focus-outline-color;
+  }
+}
+
+textarea {
+  height: inherit;
+  padding: 4px 6px !important;
+}
+
+
+select {
+  font-size: 1rem;
+  height: 2rem;
+  background-color: white;
+  border: $form-border solid $form-border-color;
+
+  &:focus, &:hover {
+    border-color: $focus-outline-color;
+  }
+}
+
+
+label {
+  color: #363636;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 2.25em;
+}
+
+
+input[disabled],
+input.is-disabled,
+textarea[disabled],
+textarea.is-disabled {
+  pointer-events: none;
+  opacity: $disabled-opacity;
+}
+
+
+input[type="checkbox"],
+input[type="radio"] {
+  vertical-align: baseline;
+  cursor: pointer;
+  align-items: center;
+  cursor: pointer;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  vertical-align: top;
+  height: 2.4rem;
+}

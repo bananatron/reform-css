@@ -1,0 +1,73 @@
+// Buttons
+
+input[type='submit'],
+button {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: none;
+  border-radius: $radius;
+  box-shadow: none;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 1rem;
+  height: 2.25em;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  line-height: 1.5;
+  padding: 0 10px;
+  position: relative;
+  vertical-align: top;
+  user-select: none;
+  background-color: white;
+  border: $button-border solid $button-border-color;
+  color: #363636;
+  cursor: pointer;
+  justify-content: center;
+  text-align: center;
+  white-space: nowrap;
+
+  &.is-primary {
+    background-color: black;
+    border-color: black;
+    color: white;
+  }
+  &.is-shadowed {
+    box-shadow: 3px 3px;
+      &:hover { box-shadow: 2px 2px $focus-outline-color;  }
+  }
+
+  &[disabled] {
+    pointer-events: none;
+    opacity: $disabled-opacity;
+  }
+
+  &:hover,
+  &:focus {
+    border-color: $focus-outline-color;
+  }
+
+  &.is-link {
+    border: 0;
+    color: #4a4a4a;
+    &:hover, &:focus { 
+      background-color: inherit !important;
+      &:after { border-color: $focus-outline-color; }
+    }
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 0.3rem;
+      width: 80%;
+      border-bottom: 2px solid black;
+    }
+  }
+}
+

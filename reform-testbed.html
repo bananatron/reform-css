@@ -17,7 +17,7 @@
     <section>
       <h1>Reform CSS</h1>
       <p>The idea behind <b>Reform</b> was to create a lightweight stylesheet that just worked, and to avoid the bloat and learning curve of a massive CSS framework. 
-      <p>Be semantic with your markup, and reform will take care of the rest.</p>
+      <p>Be semantic with your markup and reform will take care of the rest.</p>
     </section>
 
     <section>
@@ -26,12 +26,7 @@
       <button>A plain unstyled button</button>
       <button class="is-link">Link Button</button>
       <button class="is-shadowed">Shadowed Button</button>
-      <br>
-      <p>Select boxes also don't look ugly without using classnames.</p>
-      <select name="" id="">
-        <option value="">Electric</option>
-        <option value="">Boogaloo</option>
-      </select>
+      <button disabled>Disabled Button</button>
     </section>
 
     <section>
@@ -51,36 +46,110 @@
     <section>
     <h1>Forms</h1>
     <p>The powerhouse of any web app - the almight form.</p>
-      <form class="is-vertical">
-        <label>Name</label>
-        <input type="text" ></input>
 
-      <label>DOB</label>
+    <form>
+      <label>Name</label>
+      <input type="text" ></input>
+
+      <label>Text</label>
       <input type="text" />
 
-      <label>Do you?</label>
-      <label for="1">Yay</label>
+      <h3>Checkboxes</h3>
+      <label for="1">Lol</label>
       <input type="checkbox"  id="1"/>
-      <label for="2">Lol</label>
+      <label for="2">Rofl</label>
       <input type="checkbox"  id="2"/>
-      <label for="3">Rofl</label>
+      <label for="3">Wtf</label>
       <input type="checkbox"  id="3"/>
 
-      <input type="radio" />
-      <input type="text" />
-      <input type="text" />
+      <h3>Radio</h3>
+      <label for="radio-sample">My rad radio</label>
+      <input type="radio" id="radio-sample" />
 
+      <h3>Select</h3>
+      <select>
+        <option value="">Electric</option>
+        <option value="">Boogaloo</option>
+      </select>
 
-      <textarea name="" id="" cols="30" rows="2">   </textarea>
+      <h3>Textarea</h3>
+      <textarea name="" id="" cols="30" rows="2"></textarea>
+
+      <p></p>
       <input type="submit" class="is-primary" />
-      </form>
+      <button>Other</button>
+    </form>
 
-    <div class="box">
-      Lorem ipsum dolor sit amet, consectetur
-      adipiscing elit lorem ipsum dolor sit amet,
-      consectetur adipiscing elit
-    </div>
+    <br />
+    <p>Use the <code>is-vertical</code> class to force a flexbox vertical form layout.</p>
 
+    <form class="is-vertical">
+      <label>Name</label>
+      <input type="text" ></input>
+
+      <label>Text</label>
+      <input type="text" />
+
+      <h3>Checkboxes</h3>
+      <label>
+        <input type="checkbox" />
+        Lol
+      </label>
+      <label>
+        <input type="checkbox"/>
+        Rofl
+      </label>
+      
+      <label>
+        <input type="checkbox"/>
+        Wtf
+      </label>
+
+      <h3>Radio</h3>
+      <label>
+        <input type="radio" />
+        My rad radio
+      </label>
+
+      <h3>Select</h3>
+      <select>
+        <option value="">White Snake</option>
+        <option value="">Journey</option>
+        <option value="">Van Halen</option>
+      </select>
+
+      <h3>Textarea</h3>
+      <textarea name="" id="" cols="30" rows="2"></textarea>
+
+      <div>
+        <input type="submit" class="is-primary" />
+        <button>Other</button>
+      </div>
+    </form>
+
+
+    <section>
+      <h1>Boxes</h1>
+      <p>Boxes are visual containers for content, with some style options.</p>
+
+      <div class="box">
+        Lorem ipsum dolor sit amet, consectetur
+        adipiscing elit lorem ipsum dolor sit amet,
+        consectetur adipiscing elit
+      </div>
+
+      <div class="box is-transparent">
+        Lorem ipsum dolor sit amet, consectetur
+        adipiscing elit lorem ipsum dolor sit amet,
+        consectetur adipiscing elit
+      </div>
+
+      <div class="box is-outlined">
+        Lorem ipsum dolor sit amet, consectetur
+        adipiscing elit lorem ipsum dolor sit amet,
+        consectetur adipiscing elit
+      </div>
+    </section>
 
     <section>
       <h1>Headers</h1>
@@ -91,19 +160,27 @@
     </section>
 
 
-    <table>
-      <tr>
-        <th>lol</th><th>loler</th>
+    <section>
+      <h1>Tables</h1>
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>Occupation</th>
+          <th>Employer</th>
+        </tr>
+        <tr>
+          <td>Bob Belcher</td>
+          <td>Chef</td>
+          <td>Bob's Burgers</td>
+        </tr>
+        <tr>
+          <td>Dwight Shrute</td>
+          <td>Paper Salesman</td>
+          <td>Dunder Mifflin</td>
+        </tr>
+      </table>
+    </section>
 
-      </tr>
-      <tr>
-        <td>lol</td>
-        <td>blah</td>
-      </tr>
-      <tr>
-        <td>basdf</td>
-        <td>ad;f jqfoqfodjo</td></tr>
-    </table>
 
     </section>
   </body>
