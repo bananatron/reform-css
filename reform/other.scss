@@ -70,16 +70,16 @@ th {
   text-align: left;
 }
 
-
+header,
+footer,
+main,
 section {
   margin: auto;
   max-width: 900px;
-  margin-bottom: 50px;
-  margin-top: 25px;
 }
 
-
-p { margin: $vertical-spacing 0; }
+header { padding-bottom: $vertical-spacing; }
+footer { padding-top: $vertical-spacing*2; }
 
 
 article,
@@ -92,6 +92,13 @@ section {
   display: block;
 }
 
+section:not(empty) {
+  margin-bottom: $vertical-spacing*2;
+  margin-top: $vertical-spacing;
+}
+
+
+p { margin: $vertical-spacing 0; }
 
 body,
 button,
@@ -135,9 +142,8 @@ h3,
 h4,
 h5,
 h6 {
-
+  margin-bottom: $vertical-spacing;
 }
-
 
 
 // Notifications
