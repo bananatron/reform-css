@@ -1,5 +1,6 @@
 // Buttons
 
+.button,
 input[type='submit'],
 button {
   -moz-appearance: none;
@@ -32,10 +33,11 @@ button {
   white-space: nowrap;
 
   &.is-primary {
-    background-color: black;
-    border-color: black;
-    color: white;
+    background-color: $color-primary;
+    border-color: $color-primary;
+    color: $color-text-primary;
   }
+
   &.is-shadowed {
     box-shadow: 3px 3px;
       &:hover { box-shadow: 2px 2px $focus-outline-color;  }
@@ -54,6 +56,7 @@ button {
   &.is-link {
     border: 0;
     color: #4a4a4a;
+
     &:hover, &:focus { 
       background-color: inherit !important;
       &:after { border-color: $focus-outline-color; }
@@ -70,4 +73,3 @@ button {
     }
   }
 }
-
