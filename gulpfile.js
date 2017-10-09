@@ -4,7 +4,6 @@ var concat = require('gulp-concat');
 var autoprefixer = require('gulp-autoprefixer'); //https://github.com/postcss/autoprefixer#options
 var minify = require('gulp-clean-css');
 var sourcemaps = require('gulp-sourcemaps');
-var nodemon = require('gulp-nodemon');
 
 // Server start
 gulp.task('default', function () {
